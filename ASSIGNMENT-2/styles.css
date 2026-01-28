@@ -83,7 +83,6 @@ body {
     justify-content: center;
     padding: 12px 24px;
     gap: 12px;
-
 }
 
 .card, #first-card{
@@ -92,11 +91,12 @@ body {
     border-radius: 12px;
     display: flex;
     align-items: center;
-    gap: 12px;
+    row-gap: 12px;
 }
 
 .card{
     grid-column-start: 2;
+    gap: 12px;
 }
 
 .card-img{
