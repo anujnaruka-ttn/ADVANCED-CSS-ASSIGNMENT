@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f5f5;
+    width: 100vw;
+    height: 100vh;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-container {
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-areas: 
+    "a b c"
+    "d e f"
+    "g h i";
+    gap: 10px;
+}
+
+#main-container div {
+    background-color: rgba(0, 0, 0, 0.77);
+    border: 2px solid #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+#main-container div p {
+    background-color: #ddc02e;
+    padding: 12px 24px;
+    border: 4px solid #48463b76;
+    border-radius: 100%;
+}
+
+#cell-A{
+    grid-area: a;
+}
+#cell-B{
+    grid-area: b;
+}
+#cell-C{
+    grid-area: c;
+}
+#cell-D{
+    grid-area: d;
+}
+#cell-E{
+    grid-area: e;
+}
+#cell-F{
+    grid-area: f;
+}
+#cell-G{
+    grid-area: g;
+}
+#cell-H{        
+    grid-area: h;
+}
+#cell-I{
+    grid-area: i;
+}
