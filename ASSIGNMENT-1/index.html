@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bug Report Form</title>
+</head>
+<body>
+    <main id="main-container">
+        <!-- NAV CONTAINER -->
+        <header id="nav-container">
+            <!-- NAVBAR -->
+            <nav id="navbar">
+                <div class="navhead-text-container">
+                    <p>to the new</p>
+                </div>
+                <li class="nav-options-list">
+                    <ul class="nav-options">
+                            <a href="#home">home</a>
+                    </ul>
+                    <ul class="nav-options">
+                        <a href="#quick-help">quick help</a>
+                    </ul>
+                </li>
+            </nav>
+        </header>
+
+        <!-- DIVIDER -->
+        <div class="divider"></div>
+        <!-- MAIN CONTENT -->
+        <section id="form-container">
+            <form method="post" id="bug-report-form">
+                <header id="form-header">
+                    Bug Report
+                </header>
+                <div id="form-body">
+                    <div class="form-groups">
+                        <label for="title">
+                            Title:*
+                        </label>
+                        <input type="text" name="title" id="title" required>
+                    </div>
+                    <div class="form-groups">
+                        <label for="description">
+                            Description:*
+                        </label>
+                        <textarea name="description" id="description" cols="30" rows="5" required></textarea>
+                    </div>
+                    <div class="form-groups">
+                        <label for="os">Operating system:</label>
+                        <select name="operating system" id="os">
+                            <option value="windows">Windows XP</option>
+                            <option value="macos">MacOS</option>
+                            <option value="linux">Linux</option>
+                        </select>
+                    </div>
+                    <div class="form-groups">
+                        <label for="product">Product:*</label>
+                        <select name="product" id="product" required>
+                            <option value="formoid">Formoid</option>
+                            <option value="mobile">Mobile</option>
+                        </select>
+                    </div>
+                    <div class="form-groups">
+                        <label for="version">Version:*</label>
+                        <input type="number" name="version" id="version" required>
+                    </div>
+                    <div class="form-groups" id="license-group">
+                        <p id="license">License:</p>
+                        <div id="license-options">
+                            <div class="license-radio">
+                                <input type="radio" name="license" id="license-free">
+                                <label for="license-free">Free</label>
+                            </div>
+                            <div class="license-radio">
+                                <input type="radio" name="license" id="license-business">
+                                <label for="license-business">Business</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-groups">
+                        <label for="severity">
+                            Severity:
+                        </label>
+                        <select name="severity" id="severity">
+                            <option value="critical">Critical</option>
+                            <option value="medium">Medium</option>
+                            <option value="low">Low</option>
+                        </select>
+                    </div>
+                    <div class="form-groups">
+                        <label for="attachments">Attachments:</label>
+                        <input type="file" name="attachments" id="attachments">
+                    </div>
+                </div>
+                <footer id="form-footer">
+                    <button type="submit" id="submit-btn">Send</button>
+                </footer>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
